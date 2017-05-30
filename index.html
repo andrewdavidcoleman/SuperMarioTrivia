@@ -14,11 +14,47 @@
 
 <body>
 
-<div class="container">
+<!-- hidden timer that displays when less than 10 seconds left -->
+<div class="timer" id="hidden-timer">01:00</div>
 
+
+<div class="container">
+<!-- undisplayed audio files to be used throughout the app -->
+<audio id="pipe-sound" style="display: none">
+    <source src="assets/audio/pipe.wav" type="audio/wav">
+</audio>
+<audio id="coin-sound" style="display: none">
+    <source src="assets/audio/coin.wav" type="audio/wav">
+</audio>
+<audio id="death-sound" style="display: none">
+    <source src="assets/audio/death.wav" type="audio/wav">
+</audio>
+<audio id="gameover-sound" style="display: none">
+    <source src="assets/audio/gameover.wav" type="audio/wav">
+</audio>
+<audio id="timelow-sound" style="display: none">
+    <source src="assets/audio/timelow.wav" type="audio/wav">
+</audio>
+<audio id="worldclear-sound" style="display: none">
+    <source src="assets/audio/worldclear.wav" type="audio/wav">
+</audio>
+<audio id="stageclear-sound" style="display: none">
+    <source src="assets/audio/stageclear.wav" type="audio/wav">
+</audio>
+<audio id="powerup-sound" style="display: none">
+    <source src="assets/audio/powerup.wav" type="audio/wav">
+</audio>
+<audio id="hurryup-sound" style="display: none">
+    <source src="assets/audio/hurryup.wav" type="audio/wav">
+</audio>
 
 <!-- page with a start button that appears when the page loads -->
-<div class="start-screen">WAITINGGGGGGG</div>
+<div class="start-screen">
+  <br><br><br><br><br><br><br><br><h1>Super Mario Trivia!</h1><br>Answer all the questions before time runs out!
+  <br>(sound on for full experience)
+  <br>Click to get started:<br><br>
+  <button id="begin-button">BEGIN</button>
+</div>
 
 
 
@@ -27,64 +63,76 @@
 <h1>Super Mario Trivia!</h1>
 
 <div class="timer-div">
-	Time remaining: <div id="timer">01:00</div>
+	Time remaining: <div class="timer">01:00</div>
 </div><br>
 
 <p>1. In what video game did Mario make his first appearance?</p>
 <div class="answers-div">
 	<form action="">
-  		<div class="answer"><input type="radio" name="answersq1" value="answer 1">Super Mario Bros.</div>
-  		<div class="answer"><input type="radio" name="answersq1" value="answer 2">Duck Hunt</div>
-  		<div class="answer"><input type="radio" name="answersq1" value="answer 3">Super Mario World</div>
-  		<div class="answer"><input type="radio" name="answersq1" value="answer 3">Donkey Kong</div>
+  		<div class="answer"><input type="radio" name="answersq1" value="Super Mario Bros.">Super Mario Bros.</div>
+  		<div class="answer"><input type="radio" name="answersq1" value="Duck Hunt">Duck Hunt</div>
+  		<div class="answer"><input type="radio" name="answersq1" value="Super Mario World">Super Mario World</div>
+  		<div class="answer"><input type="radio" name="answersq1" value="Donkey Kong">Donkey Kong</div>
 	</form>
 </div>
 <br><br>
 <p>2. What is the name of the recurring damsel in distress in the Super Mario video game franchise?</p>
 <div class="answers-div">
 	<form action="">
-  		<div class="answer"><input type="radio" name="answersq2" value="answer 1">Princess Peach</div>
-  		<div class="answer"><input type="radio" name="answersq2" value="answer 2">Princess Toadstool</div>
-  		<div class="answer"><input type="radio" name="answersq2" value="answer 3">Mrs. Mario</div>
-  		<div class="answer"><input type="radio" name="answersq2" value="answer 3">Princess Koopa</div>
+  		<div class="answer"><input type="radio" name="answersq2" value="Princess Peach">Princess Peach</div>
+  		<div class="answer"><input type="radio" name="answersq2" value="Princess Toadstool">Princess Toadstool</div>
+  		<div class="answer"><input type="radio" name="answersq2" value="Mrs. Mario">Mrs. Mario</div>
+  		<div class="answer"><input type="radio" name="answersq2" value="Princess Koopa">Princess Koopa</div>
 	</form>
 </div>
 <br><br>
-<p>3. Which occupation has Mario not had in any of his video game appearances?</p>
+<p>3. Which occupation has Mario NOT had in any of his video game appearances?</p>
 <div class="answers-div">
 	<form action="">
-  		<div class="answer"><input type="radio" name="answersq3" value="answer 1">Chef</div>
-  		<div class="answer"><input type="radio" name="answersq3" value="answer 2">Carpenter</div>
-  		<div class="answer"><input type="radio" name="answersq3" value="answer 3">Plumber</div>
-  		<div class="answer"><input type="radio" name="answersq3" value="answer 3">Physician</div>
+  		<div class="answer"><input type="radio" name="answersq3" value="Chef">Chef</div>
+  		<div class="answer"><input type="radio" name="answersq3" value="Carpenter">Carpenter</div>
+  		<div class="answer"><input type="radio" name="answersq3" value="Plumber">Plumber</div>
+  		<div class="answer"><input type="radio" name="answersq3" value="Physician">Physician</div>
 	</form>
 </div>
 <br><br>
-<p>What is the thing with the thing of the thing?</p>
+<p>The first 3D Super Mario game was:</p>
 <div class="answers-div">
 	<form action="">
-  		<div class="answer"><input type="radio" name="answersq4" value="answer 1">Answer 1</div>
-  		<div class="answer"><input type="radio" name="answersq4" value="answer 2">Answer 2</div>
-  		<div class="answer"><input type="radio" name="answersq4" value="answer 3">Answer 3</div>
+  		<div class="answer"><input type="radio" name="answersq4" value="Super Mario World">Super Mario World</div>
+  		<div class="answer"><input type="radio" name="answersq4" value="Super Mario 64">Super Mario 64</div>
+  		<div class="answer"><input type="radio" name="answersq4" value="Paper Mario">Paper Mario</div>
+      <div class="answer"><input type="radio" name="answersq4" value="Mario Kart">Mario Kart</div>
 	</form>
 </div>
 <br><br>
-<p>What is the thing with the thing of the thing?</p>
+<p>What was Mario's original name from his first video game appearance?</p>
 <div class="answers-div">
 	<form action="">
-  		<div class="answer"><input type="radio" name="answersq5" value="answer 1">Answer 1</div>
-  		<div class="answer"><input type="radio" name="answersq5" value="answer 2">Answer 2</div>
-  		<div class="answer"><input type="radio" name="answersq5" value="answer 3">Answer 3</div>
+  		<div class="answer"><input type="radio" name="answersq5" value="Dodger">Dodger</div>
+  		<div class="answer"><input type="radio" name="answersq5" value="Mario">Mario</div>
+  		<div class="answer"><input type="radio" name="answersq5" value="Jumpman">Jumpman</div>
+      <div class="answer"><input type="radio" name="answersq5" value="Bouncer">Bouncer</div>
 	</form>
 </div>
 <br><br>
-<p>What is the thing with the thing of the thing?</p>
-<button>Submit</button>
+<button id="done-button">Done</button>
 </div>
 
 
 <!-- results page that shows whether you won or lost and the results of the game -->
-<div class="game-over-screen">GAMEOVERRRR</div>
+<div class="game-over-screen">
+<br><br>
+<div id="game-over-phrase"></div><br>
+Correct: <span id="correct"></span><br>
+Incorrect: <span id="incorrect"></span><br>
+Unanswered: <span id="unanswered"></span><br>
+<a id="info-link" target="_blank" href="https://en.wikipedia.org/wiki/Super_Mario">https://en.wikipedia.org/wiki/Super_Mario</a>
+<br><br><button id="retry-button">Retry</button>
+
+
+
+</div>
 
 
 
