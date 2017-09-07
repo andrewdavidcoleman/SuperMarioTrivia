@@ -7,7 +7,7 @@
 
 * Once the user hits the begin button, they are presented with the questions and the timer begins:
 
-![Landing page](https://user-images.githubusercontent.com/25711714/30183058-030c948e-93e7-11e7-88b8-9bedae45aacc.png)
+![Landing page](https://user-images.githubusercontent.com/25711714/30183306-ee51849a-93e7-11e7-9be9-bcd40ed9556f.png)
 
 When they hit the submit button, or when time runs out, they are taken to the results screen that shows the number of questions they got right.
 
