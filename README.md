@@ -16,7 +16,7 @@
 ### Link
 https://super-mario-trivia.herokuapp.com/
 
-###Author
+### Author
 Andrew Coleman
 
-#######Let's-a-go!
+####### Let's-a-go!
