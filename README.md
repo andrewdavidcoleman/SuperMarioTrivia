@@ -3,7 +3,7 @@
 
 * The user is met with a welcome screen containing instructions and a begin button:
 
-<img src="https://user-images.githubusercontent.com/25711714/30182634-87e204b6-93e5-11e7-8fbc-2c9919e6f294.png" height="200"/>
+<img src="https://media.giphy.com/media/tQX31goYzt6h2/giphy.gif" height="200"/>
 
 * Once the user hits the begin button, they are presented with the questions and the timer begins:
 
